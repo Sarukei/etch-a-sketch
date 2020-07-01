@@ -1,0 +1,73 @@
+$squareSize: 1.6rem;
+$gridSize: 96rem;
+$black: rgb(20, 16, 22);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 1.6rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(45, 34, 59);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+button {
+  border: none;
+  padding: 1.75rem 3rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.7rem;
+  transition: all 0.456s ease-in-out;
+
+  &:hover {
+    color: lighten($color: #000000, $amount: 100);
+    background-color: darken(#ccc, 20);
+    transform: scale(1.175);
+  }
+}
+
+#grid-btn {
+  border: 3px solid rgb(110, 107, 107);
+  margin: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-decoration: underline;
+  line-height: 1.5;
+  text-decoration-style: dashed;
+  text-underline-offset: 1px;
+  // text-decoration-thickness: 1px;
+}
+
+// .grid-container {
+//   display: grid;
+//   grid-template-columns: repeat(16, 1fr);
+//   grid-template-rows: repeat(16, 1fr);
+//   width: $gridSize;
+//   height: $gridSize;
+//   // gap: 1rem;
+// }
+
+.square {
+  background-color: orange;
+  border: 1px solid rgba(0, 0, 0, 0.096);
+
+  &-black {
+    background-color: $black;
+  }
+}
